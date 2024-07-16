@@ -1,0 +1,17 @@
+h2{
+    color: rgb(238, 228, 228); /*color de texto*/
+    background-color: brown; /*color de fondo*/
+    padding: 10px; /* espacio antes del texto */
+    /* background-image: url(/img/banner-sedes-desktop_0.jpg); imgen de fondo */
+    background-position: center; /* posición de la imagen al centro */
+    border-radius: 15px; /* modifica las esquinas del fondo del párrafo */
+}
+
+p{
+    background-color: rgb(241, 213, 213);
+    padding: 25px;
+    color: rgb(59, 47, 47);
+    border-radius:15px ;
+    text-align: justify; /* alineación justificada */
+
+}

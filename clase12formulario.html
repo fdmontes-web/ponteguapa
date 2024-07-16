@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/clase12.css">
+</head>
+<body>
+
+<section class="form_registro">
+    <h4 class="titulo">
+        Formulario de Registro
+    </h4>
+    <form>
+       <input type="text" class="controles" placeholder="Ingrese su nombre" autocomplete="on">
+       <input type="text" class="controles" placeholder="Ingrese sus apellidos" autocomplete="on">
+       <input type="text" class="controles" placeholder="Ingrese su Teléfono" autocomplete="on">
+
+       <!-- creación de grupo con etiqueta fieldset -->
+        <fieldset class="grupo">
+            <!-- agregaremo título al grupo -->
+             <legend>Sexo:</legend>
+             <input class="radio" type="radio" name="sexo" value="fem"> Femenino
+
+             <br><input class="radio" type="radio" name="sexo" value="masc"> Masculino
+
+             <br><input class="radio" type="radio" name="sexo" value="nqc"> No quiero contestar
+        </fieldset>
+
+        <fieldset class="grupo">
+            <legend>Fecha de nacimiento:</legend>
+            <input type="date" class="controles">
+
+        </fieldset>
+
+        <input type="text" class="controles" placeholder="Ingrese su usuario">
+
+        <input type="password" class="controles" placeholder="Ingrese su contraseña">
+       
+        <p>Si no tiene cuenta <a href="#">Clic aquí</a></p>
+
+        <!-- insertar botones de envio y reset -->
+         <input class="boton" type="submit" name="" id="">
+         <input class="boton" type="reset" name="" id="">
+    </form>
+</section>  
+    
+   
+</body>
+</html>

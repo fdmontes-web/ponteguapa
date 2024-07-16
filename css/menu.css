@@ -1,0 +1,56 @@
+/* PASO 6: quitar margen y espacio interno */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* PASO 1: quitar estilo de viñeta */
+ul{
+    list-style-type: none;
+}
+
+
+/* PASO 2: Quitar el subrayado */
+nav li a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+    width: 95px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+/* PASO 3: modificar el ancho de la barra de menú */
+nav{
+    width: 500px;
+    margin: auto;
+}
+
+/* PASO 4: acomodar cada li horizontal */
+nav ul li{
+    float: left;
+}
+
+/* PASO 5: usar pseudocódigo HOVER para crear animación */
+nav li a:hover{
+    background-color: darkgrey;
+}
+
+/* PASO 7: aplicar posición absoluta al submenú */
+.submenup{
+    position: absolute;
+    display: none; /* ocultar el submenú */
+}
+
+/* PASO 8: modificar la propiedad float para el submenú */
+.subm{
+    float: none;
+}
+
+/* PASO 9: mostrar los submenú al momento de pasar el mouse */
+nav li:hover >ul{
+    display: block;
+}

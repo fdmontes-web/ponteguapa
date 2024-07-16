@@ -1,0 +1,74 @@
+/* .elipse{
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    border-radius: 50%; /* se convierte en elipse */ 
+    /* 1. asignar nombre a la animación */
+    /* animation-name: animelipse; */
+    /* 2. signar duración */
+    /* animation-duration: 4s; */
+    /* 3. definir el ciclo-infinito */
+    /* animation-iteration-count:infinite ;
+    position: relative; 
+} */
+
+/* Usar la regla @keyframes para desencadenar la animación */
+/* @keyframes animelipse{
+    0%{}
+    50%{background-color: yellow;width: 500px;border-radius: 0px;}
+    100%{background-color: black;}
+} */
+
+/* *******DESPLAZAMIENTO**** */
+/* @keyframes animelipse{
+    0%{left:0%}
+    50%{background-color: yellow;}
+    100%{background-color: black; left: 100%;}
+} */
+
+/* 1. quitar el margen a toda la página */
+body{
+    margin: 0;
+    background-color: beige;
+}
+
+/* 2. definir la presentación del selector principal */
+.slider{
+width: 1200px;
+margin: 50px auto;
+border: 3px solid rgb(231, 231, 218);
+overflow: hidden;
+box-shadow: 0 4px 8px;
+}
+
+/* 3.definir la propiedad animation */
+.slides{
+    display: flex;
+    width: 300%;
+    animation-name: movimiento;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+/* 4. definir propiedades para las imagenes */
+ .slide{
+    width: 1200px;
+ }
+
+ /* 5. modificar solo las imagenes contenidas en slide */
+ .slide img{
+    height: 450px;
+    display: block;
+ }
+
+ /* 6.definir la animación */
+ @keyframes movimiento{
+    0%{transform: translatex(0);}
+    100%{transform: translatex(-100%);}
+ }
+
+
+
+
+
+

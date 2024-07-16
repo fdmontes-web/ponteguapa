@@ -1,0 +1,65 @@
+/* PASO 1: aplicar formato a toda la página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* PASO 2: aplicar formato al formulario */
+.form_registro{
+    width: 500px;
+    background-color: purple;
+    color: white;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* PASO 3: Aplicar formato al título */
+.titulo{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* PASO 4: aplicar formato a los controles */
+.controles{
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(246, 199, 246);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* PASO 5: Aplicar formato a los grupos sexo, fecha nac */
+.grupo{
+    padding: 15px;
+    margin-bottom: 13px;
+    text-align: left;
+}
+
+/* PASO 6: Aplicar formato a los elementos del sexo */
+.radio{
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+/* PASO 7: Aplicar formato a los botones */
+.boton{
+    width: 150px;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+/* PASO 8: Aplicar formato etique p */
+.form_registro p{
+    padding: 25px;
+}
+
+/* PASO 9: quitaremos el color de la etiqueta a */
+.form_registro a{
+    color: white;
+}

@@ -1,0 +1,128 @@
+/* Estilos generales */
+body{
+    font-family: arial,san-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    width: 1fr;
+    height: 450px;
+    background-image: url(/img/banner1.png);
+    background-repeat: no-repeat; /* evitará repetir la image */
+    background-position: center; /* ubicará la imagen al centro como foco de atención */
+}
+
+/* estilos barra de menú */
+.menu{
+    background-color: #333; 
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* definir los elementos en horizontal */
+    justify-content: center;
+}
+
+.menu ul li{
+    margin: 0 15px; /* espacio entre los elementos del menú */
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+/* agregarle efecto al pasar el mousse */
+.menu ul li a:hover{
+    background-color: #8f8c8c;
+}
+
+main{
+    padding: 2rem;
+    background-color: rgb(238, 238, 236);
+}
+
+.historia{
+    margin-bottom: 2rem;
+}
+
+.contenido-historia{
+    display: flex;
+}
+
+.contenido-historia img{
+    margin-right: 20px;
+    box-shadow: 10px 5px 10px rgb(197, 195, 195);
+    border-radius: 15px;
+}
+
+.contenido-historia p{
+    flex: 1;
+    text-align: justify;
+}
+
+.galeria{
+    margin-bottom: 2rem;
+}
+
+.galeria-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.galeria-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 10px 5px 10px rgb(162, 160, 160);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* estilos adaptativo para movile */
+@media (max-width: 768px) {
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu ul li{
+        margin: 0;
+        border-bottom: 1px solid gray;
+    }
+
+    .menu ul li a{
+        text-align: center;
+    }
+
+    .contenido-historia{
+        flex-direction: column;
+    }
+
+    .contenido-historia img{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .galeria-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* modo adaptativo para tableta */
+@media (min-width: 769px) and (max-width: 1024px){
+    .galeria-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

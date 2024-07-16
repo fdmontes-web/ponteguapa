@@ -1,0 +1,137 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;/* Fuente principal de la página */
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 1fr;
+    height: 450px;
+ background-image: url(/img/banner1.png); /* imagen de fondo */
+ background-repeat: no-repeat; /* evita que se repita la imagen cuando es más pequeña */
+ background-position: center; /* ubica la imagen al centro para que sea el foco de atención */
+}
+
+/* Estilos para la barra de menú */
+.menu {
+    background-color: #333;
+}
+
+.menu ul {
+    list-style-type: none;/* Elimina los puntos de las listas */
+    margin: 0;
+    padding: 0;
+    display: flex;/* Flexbox para distribuir los elementos del menú horizontalmente */
+    justify-content: center;/* Centra los elementos del menú horizontalmente */
+  
+}
+
+.menu ul li {
+    margin: 0 15px;/* Espacio entre los elementos del menú */
+    
+    
+}
+
+.menu ul li a {
+    color: white;/* Color del texto del menú */
+    text-decoration: none;/* Elimina el subrayado de los enlaces */
+    padding: 14px 20px;/* Espaciado dentro de cada elemento del menú */
+    display: block;/* Asegura que el área clicable del enlace sea un bloque completo */
+    border-radius: 15px;
+}
+
+nav.menu ul li a:hover {
+    background-color: #575757;/* Color de fondo al pasar el ratón sobre los enlaces */
+}
+
+main {
+    padding: 2rem;
+    background-color: rgb(246, 246, 246);
+}
+
+.historia {
+    margin-bottom: 2rem; /* Espaciado inferior de la sección de historia */
+}
+
+.historia-content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    
+}
+
+.historia-content img {
+    /* La imagen no excederá el 100% del contenedor */
+        margin-right: 20px; /* Espacio a la derecha de la imagen */
+        box-shadow: 10px 5px 10px rgb(163, 162, 162);
+        border-radius: 15px;
+        
+}
+
+.historia-content p {
+    flex: 1; /* El texto ocupa el espacio restante dentro del contenedor flex */
+    text-align: justify;
+}
+
+/* Estilos para la galería de promociones */
+.galeria {
+    margin-bottom: 2rem; /* Espaciado inferior de la sección de galería */
+}
+
+.galeria-grid {
+    display: grid; /* Utiliza CSS Grid para la disposición de la galería */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    gap: 10px; /* Espacio entre los elementos de la cuadrícula */
+}
+
+.galeria-item img {
+    width: 100%; /* Cada imagen de la galería ocupa el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 15px;
+    box-shadow: 10px 5px 10px rgb(163, 162, 162);
+}
+
+footer{
+    
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    nav.menu ul {
+        flex-direction: column; /* Cambia la dirección del menú a vertical en pantallas pequeñas */
+    }
+
+    nav.menu ul li {
+        margin: 0; /* Elimina el margen entre los elementos del menú */
+        border-bottom: 1px solid #575757; /* Agrega una línea de separación entre los elementos */
+    }
+
+    nav.menu ul li a {
+        text-align: center; /* Centra el texto de los enlaces del menú */
+    }
+
+    .historia-content {
+        flex-direction: column; /* Cambia la dirección de la flexbox a vertical en pantallas pequeñas */
+    }
+
+    .historia-content img {
+        margin-right: 0; /* Elimina el margen derecho de la imagen */
+        margin-bottom: 20px; /* Agrega margen inferior a la imagen */
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr; /* Una sola columna en la galería en pantallas pequeñas */
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho en pantallas medianas */
+    }
+}
+

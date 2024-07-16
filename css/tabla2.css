@@ -1,0 +1,21 @@
+.table{
+    background-color: aquamarine;
+    width: 600px;
+    height: 200px;
+    display: table;
+    border-collapse: collapse;
+    margin: auto;
+    
+}
+
+.row{
+    display: table-row;
+    text-align: center;
+}
+
+.cell{
+    border: 5px solid white;
+    display: table-cell;
+    width:200px ;
+    padding: 15px;
+}

@@ -1,0 +1,54 @@
+.table{
+    display:table;
+    width: 600px;
+    border-collapse: collapse;
+}
+
+.row{
+    display:table-row;
+    background-color: aquamarine;
+}
+
+.cell{
+    display: table-cell;
+    border: 3px solid;
+    padding:10px;
+    width:200px ;
+}
+
+ul{
+    /* quitar el estilo viñeta */
+    list-style-type: none;
+}
+
+/* aplique formato sólo a las etiqueta a dentro del li, dentro nav */
+nav li a{
+    /* quitar subrayado */
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    width: 90px;
+    border-radius: 10px;
+}
+
+/* .menup{
+    float:left;
+} */
+
+nav li{
+    float: left;
+}
+
+nav{
+    width: 500px;
+    margin: auto;
+
+}
+
+/* usar pseudocalse HOVER para el cambio de color */
+nav li a:hover{
+    background-color: darkgrey;
+    /* color:red; */
+}
